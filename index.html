@@ -1,241 +1,187 @@
-<h1>Survey Quick</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
  
-<p>
-Create observational surveys, record observations,
-analyze results, and export data.
-</p>
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0"
+> 
  
-<hr>
+<meta
+name="description"
+content="Support and privacy information for the Survey Quick iPhone app."
+> 
  
-<p>
-<a href="support.html">
-Support
-</a>
-</p>
+<title>Survey Quick</title>
  
-<p>
-<a href="privacy.html">
-Privacy Policy
-</a>
-</p>
- 
-<p>
-Contact:
-<a href="mailto:stevieleep@gmail.com">
-stevieleep@gmail.com
-</a>
-</p>radial-gradient(
-circle at bottom left,
-rgba(88, 86, 214, 0.14),
-transparent 35%
-),
-var(--background);
- 
+<style>
+body {
+margin: 0;
+padding: 0;
+font-family: Arial, Helvetica, sans-serif;
+color: #1f2937;
+background-color: #f4f7fc;
 line-height: 1.6;
 }
  
 .container {
-width: min(900px, calc(100% - 32px));
+width: 90%;
+max-width: 760px;
 margin: 0 auto;
-padding: 64px 0 40px;
+padding: 50px 0;
 }
  
-.hero {
-padding: 30px 10px 42px;
+.header {
 text-align: center;
+margin-bottom: 35px;
 }
  
-.app-icon {
-display: grid;
-place-items: center;
- 
-width: 96px;
-height: 96px;
-margin: 0 auto 22px;
- 
-color: white;
- 
-background:
-linear-gradient(
-135deg,
-var(--blue),
-var(--indigo)
-);
- 
-border-radius: 28px;
- 
-box-shadow:
-0 18px 40px
-rgba(52, 120, 246, 0.28);
-}
- 
-.chart-icon {
+.icon {
 display: flex;
 align-items: flex-end;
 justify-content: center;
 gap: 6px;
- 
-width: 52px;
-height: 46px;
+width: 92px;
+height: 92px;
+margin: 0 auto 20px;
+border-radius: 24px;
+background: linear-gradient(
+135deg,
+#3478f6,
+#5856d6
+);
+box-shadow: 0 14px 32px rgba(52, 120, 246, 0.25);
 }
  
-.chart-icon span {
+.bar {
 display: block;
-width: 10px;
-background: white;
+width: 11px;
+margin-bottom: 23px;
 border-radius: 4px 4px 2px 2px;
+background-color: white;
 }
  
-.chart-icon span:nth-child(1) {
-height: 21px;
+.bar-one {
+height: 20px;
 }
  
-.chart-icon span:nth-child(2) {
+.bar-two {
 height: 34px;
 }
  
-.chart-icon span:nth-child(3) {
-height: 44px;
+.bar-three {
+height: 46px;
 }
  
 h1 {
 margin: 0;
- 
-font-size:
-clamp(2.3rem, 7vw, 4rem);
- 
-line-height: 1.1;
+font-size: 42px;
+line-height: 1.2;
 }
  
 .tagline {
-max-width: 620px;
-margin: 14px auto 0;
- 
-color: var(--secondary);
-font-size: 1.15rem;
+max-width: 580px;
+margin: 12px auto 0;
+color: #5f6878;
+font-size: 18px;
 }
  
-.grid {
+.links {
 display: grid;
- 
-grid-template-columns:
-repeat(2, minmax(0, 1fr));
- 
+grid-template-columns: 1fr 1fr;
 gap: 18px;
 }
  
 .card {
 display: block;
-padding: 28px;
- 
-color: inherit;
+padding: 26px;
+color: #1f2937;
 text-decoration: none;
- 
-background: var(--card);
-border: 1px solid var(--border);
-border-radius: 24px;
- 
-box-shadow:
-0 14px 34px var(--shadow);
- 
-transition:
-transform 0.18s ease,
-box-shadow 0.18s ease;
+background-color: white;
+border: 1px solid #dce3ef;
+border-radius: 20px;
+box-shadow: 0 10px 26px rgba(33, 60, 110, 0.10);
 }
  
-.card:hover,
-.card:focus-visible {
-transform: translateY(-3px);
- 
-box-shadow:
-0 18px 42px var(--shadow);
+.card:hover {
+border-color: #3478f6;
+transform: translateY(-2px);
 }
  
-.card:focus-visible {
-outline: 3px solid var(--blue);
-outline-offset: 3px;
-}
- 
-.card-icon {
-display: grid;
-place-items: center;
- 
-width: 48px;
-height: 48px;
-margin-bottom: 18px;
- 
-color: var(--blue);
-font-size: 1.4rem;
-font-weight: 700;
- 
-background:
-rgba(52, 120, 246, 0.12);
- 
-border-radius: 15px;
+.card-symbol {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 44px;
+height: 44px;
+margin-bottom: 15px;
+color: #3478f6;
+font-size: 22px;
+font-weight: bold;
+background-color: #eaf1ff;
+border-radius: 13px;
 }
  
 .card h2 {
 margin: 0 0 8px;
-font-size: 1.3rem;
+font-size: 22px;
 }
  
 .card p {
 margin: 0;
-color: var(--secondary);
+color: #5f6878;
 }
  
-.arrow {
-display: inline-block;
-margin-top: 18px;
- 
-color: var(--blue);
-font-weight: 700;
+.card-link {
+display: block;
+margin-top: 16px;
+color: #3478f6;
+font-weight: bold;
 }
  
 .contact {
-margin-top: 22px;
+margin-top: 20px;
 padding: 22px;
- 
 text-align: center;
- 
-background: var(--card);
-border: 1px solid var(--border);
-border-radius: 22px;
- 
-box-shadow:
-0 12px 30px var(--shadow);
+background-color: white;
+border: 1px solid #dce3ef;
+border-radius: 20px;
+box-shadow: 0 10px 26px rgba(33, 60, 110, 0.08);
 }
  
 .contact p {
-margin: 0 0 10px;
-color: var(--secondary);
+margin: 0 0 8px;
+color: #5f6878;
 }
  
 .contact a {
-color: var(--blue);
-font-weight: 700;
-text-decoration: none;
+color: #3478f6;
+font-weight: bold;
 }
  
 footer {
-padding: 42px 0 10px;
- 
-color: var(--secondary);
+margin-top: 35px;
+color: #6b7280;
 text-align: center;
-font-size: 0.9rem;
+font-size: 14px;
 }
  
-@media (max-width: 650px) {
+@media (max-width: 620px) {
 .container {
-padding-top: 34px;
+padding-top: 30px;
 }
  
-.hero {
-padding-bottom: 30px;
-}
- 
-.grid {
+.links {
 grid-template-columns: 1fr;
+}
+ 
+h1 {
+font-size: 34px;
+}
+ 
+.tagline {
+font-size: 16px;
 }
 }
 </style>
@@ -243,81 +189,66 @@ grid-template-columns: 1fr;
  
 <body>
 <main class="container">
-<section class="hero">
-<div
-class="app-icon"
-aria-hidden="true"
-> 
-<div class="chart-icon">
-<span></span>
-<span></span>
-<span></span>
-</div>
+<header class="header">
+<div class="icon" aria-hidden="true">
+<span class="bar bar-one"></span>
+<span class="bar bar-two"></span>
+<span class="bar bar-three"></span>
 </div>
  
 <h1>Survey Quick</h1>
  
 <p class="tagline">
-Create observational surveys, record results
-with one tap, understand the data, and export
-observations to CSV.
+Create observational surveys, record results with one tap,
+understand the data, and export observations to CSV.
 </p>
-</section>
+</header>
  
-<section
-class="grid"
-aria-label="Survey Quick information"
-> 
-support.html
-<div
-class="card-icon"
-aria-hidden="true"
-> 
+<section class="links">
+<a class="card" href="support.html">
+<div class="card-symbol" aria-hidden="true">
 ?
 </div>
  
 <h2>Support</h2>
  
 <p>
-Find answers to common questions and learn
-how to contact Survey Quick support.
+Find answers to common questions and learn how to
+contact Survey Quick support.
 </p>
  
-<span class="arrow">
-Open Support →
+<span class="card-link">
+Open Support &rarr;
 </span>
 </a>
  
-privacy.html
-<div
-class="card-icon"
-aria-hidden="true"
-> 
-✓
+<a class="card" href="privacy.html">
+<div class="card-symbol" aria-hidden="true">
+&#10003;
 </div>
  
 <h2>Privacy Policy</h2>
  
 <p>
-Learn how Survey Quick stores and handles
-survey data.
+Learn how Survey Quick stores and handles survey data.
 </p>
  
-<span class="arrow">
-Read Privacy Policy →
+<span class="card-link">
+Read Privacy Policy &rarr;
 </span>
 </a>
 </section>
  
 <section class="contact">
-<p>
-Need help with Survey Quick?
-</p>
+<p>Need help with Survey Quick?</p>
  
+<a href="mailto:stevieleep@gmail.com?subject=Survey Quick Support">
+stevieleep@gmail.com
+</a>
 </section>
  
 <footer>
-© 2026 Survey Quick. All rights reserved.
+&copy; 2026 Survey Quick. All rights reserved.
 </footer>
 </main>
 </body>
